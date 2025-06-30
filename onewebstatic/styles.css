@@ -80,6 +80,18 @@ ul li, ol li {
     padding: 0 20px; /* Ensure padding is within container */
 }
 
+.site-title { /* Added to make the image and text align nicely */
+    display: flex;
+    align-items: center;
+}
+
+.site-title img { /* Style for the image in the header */
+    height: 40px; /* Or other desired height */
+    width: auto;
+    margin-right: 10px;
+    /* vertical-align: middle; /* Already set inline, but good to have in CSS if we remove inline styles */
+}
+
 .site-title a {
     font-family: "Lucida Sans Console", "Lucida Grande", monospace;
     font-size: 28px; /* Slightly reduced for better balance */
@@ -110,16 +122,6 @@ ul li, ol li {
 .main-nav ul li a.selected {
     color: #ccc; /* Lighter hover/selected color for dark background */
     font-weight: bold;
-}
-
-/* Profile Picture on Homepage */
-.profile-picture {
-    display: block;
-    margin: 20px auto 30px auto; /* Centering and spacing */
-    width: 150px;
-    height: auto; /* Maintain aspect ratio */
-    # border-radius: 50%; /* Circular picture */
-    border: 3px solid #eee;
 }
 
 /* Main Content Area */
