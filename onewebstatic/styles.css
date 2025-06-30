@@ -118,7 +118,7 @@ ul li, ol li {
     margin: 20px auto 30px auto; /* Centering and spacing */
     width: 150px;
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular picture */
+    # border-radius: 50%; /* Circular picture */
     border: 3px solid #eee;
 }
 
