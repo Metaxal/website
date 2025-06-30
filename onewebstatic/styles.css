@@ -69,7 +69,7 @@ ul li, ol li {
 .site-header {
     background-color: rgba(12, 1, 96, 0.9); /* Dark blue, slightly less opaque */
     padding: 15px 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
@@ -86,9 +86,9 @@ ul li, ol li {
 }
 
 .site-title img { /* Style for the image in the header */
-    height: 40px; /* Or other desired height */
-    width: auto;
-    margin-right: 10px;
+    height: auto; /* Or other desired height */
+    width: 75px;
+    margin-right: 50px;
     /* vertical-align: middle; /* Already set inline, but good to have in CSS if we remove inline styles */
 }
 
