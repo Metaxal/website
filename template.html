@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home | laurent-orseau.com</title>
+    <title>{{PAGE_TITLE}} | laurent-orseau.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Jules HTML Cleaner">
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="{{PAGE_FILENAME}}">
     <link rel="stylesheet" href="onewebstatic/styles.css">
     <style>
         /* Basic structural styles - more in styles.css */
@@ -31,7 +31,7 @@
             /* Basic mobile menu toggle might be added via JS if needed, but keeping it simple first */
         }
     </style>
-    
+    {{ADDITIONAL_HEAD_CONTENT}}
 </head>
 <body>
     <header class="site-header">
@@ -41,36 +41,15 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="work.html" class="">Work</a></li>
+                    <li><a href="index.html" class="{{index_active}}">Home</a></li>
+                    <li><a href="work.html" class="{{work_active}}">Work</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="img/orseau_w150.jpg" alt="Laurent Orseau" style="width:150px; height:auto; display: block; margin: 20px auto;" class="profile-picture">
-        <h1>Welcome</h1>
-    </div>
-
-    <p>I am a research scientist at <a href="https://deepmind.com/">DeepMind</a> since 2014.</p>
-    <p>From 2007 to 2014, I was a <span style="font-style: italic;">maître de conférences</span> at <a href="http://www2.agroparistech.fr/UFR-Informatique-973.html">AgroParisTech</a>.</p>
-    <p>I received a PhD in Artificial Intelligence from INSA Rennes / Université de Rennes II in 2007.</p>
-    <br>
-    <p>I love programming in <a href="https://racket-lang.org/">Racket</a>.</p>
-    <br>
-    <p>Pages</p>
-    <ul style="list-style-type: disc; padding-left: 40px;">
-        <li>See my <a href="work.html">work page</a></li>
-        <li><a href="https://scholar.google.co.uk/citations?user=HVJjWlEAAAAJ&amp;hl=en&amp;oi=ao">Google scholar page</a></li>
-        <li><a href="https://dblp.uni-trier.de/pers/hd/o/Orseau:Laurent">dblp page</a></li>
-        <li><a href="https://github.com/Metaxal">Github page</a></li>
-        <li><a href="https://pkgd.racket-lang.org/pkgn/search?q=orseau">Racket packages</a></li>
-    </ul>
-    <br><br>
-
+        {{PAGE_CONTENT}}
     </main>
 
     <footer class="site-footer">
@@ -78,6 +57,6 @@
             Copyright @ All Rights Reserved
         </div>
     </footer>
-
+    {{ADDITIONAL_BODY_SCRIPTS}}
 </body>
 </html>
